@@ -1,14 +1,14 @@
 {
-  "name": "hello s3-url-rw",
+  "name": "S3 URL Rewriter",
   "version": "0.1",
   "description": "f1rst p4ss",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
+  "permissions": ["activeTab"],
   "browser_action": {
-    "default_title": "My Extension",
-    "default_popup": "popup.html",
+    "default_title": "Rewrite S3 URLs",
     "default_icon": {
       "16": "images/get_started16.png",
       "32": "images/get_started32.png",
@@ -24,3 +24,4 @@
   },
   "manifest_version": 2
 }
+

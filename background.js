@@ -1,3 +1,6 @@
-chrome.runtime.onInstalled.addListener(function() {
-  console.log("hello! this appears in extensions -> inspect views background page")
+chrome.browserAction.onClicked.addListener(function(tab){
+  console.log("Going to rewrite a url on this page");
+  chrome.tabs.executeScript({
+    file: 'rewrite.js'
+  });
 });
